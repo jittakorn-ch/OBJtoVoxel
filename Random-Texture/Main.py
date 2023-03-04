@@ -111,7 +111,7 @@ def rename_mtllib(mtl_names, obj_path, output_folder):
 
 
 
-def gat_colorcode():
+def get_colorcode():
 # Prompt the user to enter a list of tuples
     input_str = input("Enter color codes: ")
 # Convert the input string to a list of tuples
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     print(f'Enter your colors code Example: [(1, 0, 0), (0, 1, 0), (0, 0, 1), (1, 1, 0)]')
 
 
-    colors = gat_colorcode()  # Possible colors: red, green, blue, yellow
+    colors = get_colorcode()  # Possible colors: red, green, blue, yellow
 
     # Create output folder
     output_folder = create_outputdir(obj_path)
